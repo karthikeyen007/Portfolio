@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: #00D1FF;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #1f1f1f;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background: #333;
+    color: white;
+}
+
+.btn {
+    background: #00D1FF;
+    padding: 10px 20px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #009ACD;
+}
+
+/* Thank You Page */
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.thank-you h1 {
+    font-size: 4rem;
+    color: #00D1FF;
+}
+
+.thank-you p {
+    font-size: 1.5rem;
+}
+
+.thank-you .btn {
+    margin-top: 20px;
+}

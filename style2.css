@@ -1,0 +1,118 @@
+/* Global Styles */
+body {
+    background-color: #121212;  /* Dark background for sleek look */
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2.highlight {
+    color: #00D1FF;
+    text-shadow: 0 0 10px rgba(0, 209, 255, 0.7), 0 0 20px rgba(0, 209, 255, 0.5);
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #1c1c1c; /* Dark Navbar */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar-brand {
+    font-size: 2rem;
+    color: #00D1FF !important;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(0, 209, 255, 0.6);
+  }
+  
+  .navbar-nav .nav-link {
+    color: #e0e0e0 !important;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #00D1FF !important;
+    text-shadow: 0 0 10px rgba(0, 209, 255, 0.8);
+    transform: scale(1.1);
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    padding: 60px 20px;
+    background-color: #1e1e1e;
+  }
+  
+  .skills-section h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(0, 209, 255, 0.7), 0 0 50px rgba(0, 209, 255, 0.5);
+  }
+  
+  .skills-box {
+    background: #2c2f38;
+    border: 2px solid #00D1FF;
+    border-radius: 15px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    position: relative;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .skills-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    background: rgba(0, 209, 255, 0.2);
+    z-index: -1;
+    transition: all 0.4s ease;
+  }
+  
+  .skills-box:hover::before {
+    transform: scale(1.1);
+  }
+  
+  .skills-box:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 40px rgba(0, 209, 255, 0.6);
+    background: linear-gradient(135deg, #2c2f38, #1e1e1e);
+  }
+  
+  .skills-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .skills-box p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #121212;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid #00D1FF;
+    box-shadow: 0 -4px 20px rgba(0, 209, 255, 0.4);
+  }
+  
+  footer p {
+    font-size: 1rem;
+    color: #aaa;
+  }
+  

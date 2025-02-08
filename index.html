@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karthikeyan Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">KARTHIK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <!-- Achievements Button -->
+          <li class="nav-item">
+            <a class="nav-link" href="index1.html">Achievements</a>
+          </li>
+          <!-- Skills Button -->
+          <li class="nav-item">
+            <a class="nav-link" href="index2.html">Skills</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center" id="home">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <h1>Hello, It's Me</h1>
+          <h2 class="fw-bold">KARTHIKEYAN</h2>
+          <h3>And I'm a <span class="highlight">Data Scientist!</span></h3>
+          <p>Welcome to my professional portfolio. I am a Data Scientist with a passion for creating exceptional user experiences.</p>
+          
+          <!-- Social Media Icons -->
+          <div class="social-icons my-4">
+            <a href="https://github.com/karthikeyen007" class="social-icon" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/karthikeyan-v-0714672b5/" class="social-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://leetcode.com/u/karthi_t/" class="social-icon" target="_blank"><i class="bi bi-code-slash"></i></a>
+            <a href="https://www.hackerrank.com/profile/karthikeyen2604" class="social-icon" target="_blank"><i class="bi bi-laptop"></i></a>
+          </div>
+
+          <!-- Download CV Button -->
+          <a href="resume.pdf" class="btn btn-primary btn-shadow" download onclick="downloadStarted()">Download CV</a>
+        </div>
+        
+        <!-- Image with Circle Background -->
+        <div class="col-md-6 text-center">
+          <div class="image-container">
+            <div class="image-circle">
+              <img src="tec.jpg" alt="Profile Picture" class="profile-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about-me d-flex align-items-center" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+          <div class="about-image-container">
+            <div class="about-image-circle">
+              <img src="download.jpeg" alt="Profile Picture" class="profile-img-a">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2>About <span class="highlight">Me</span></h2>
+          <h3>Data Scientist Extraordinaire!</h3>
+          <p id="about-text" class="about-text">
+            I am a dedicated data scientist with a focus on analyzing complex datasets and building impactful machine learning models. My expertise includes Python, data visualization, and machine learning, and I'm passionate about staying updated on the latest advancements in data science and AI.
+          </p>
+          <p id="more-text" class="more-text" style="display: none;">
+            I have worked on various projects, including those in Natural Language Processing (NLP), Computer Vision, and predictive analytics. In addition, I am constantly exploring new algorithms and frameworks to improve my skills and contribute to innovative solutions. I also enjoy collaborating with cross-functional teams to solve real-world problems.
+          </p>
+          <button id="read-more-btn" class="btn btn-primary btn-shadow" onclick="toggleAboutContent()">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <!-- Service 1: Data Analysis -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card text-center p-4">
+            <div class="service-icon">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <h3 class="service-title">Data Analysis</h3>
+            <p class="service-description">I offer high-quality data science services, providing insightful data analysis, predictive modeling, and machine learning solutions tailored to clients' needs.</p>
+            <!-- Hidden Content -->
+            <div class="service-more-content" style="display: none;">
+              <p>We leverage powerful tools and techniques such as Python, R, and Tableau to extract insights from complex datasets, helping businesses make informed decisions.</p>
+            </div>
+            <a href="#" class="btn btn-primary btn-shadow read-more-btn">Read More</a>
+          </div>
+        </div>
+        
+        <!-- Service 2: Machine Learning -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card text-center p-4">
+            <div class="service-icon">
+              <i class="bi bi-pencil-fill"></i>
+            </div>
+            <h3 class="service-title">Machine Learning</h3>
+            <p class="service-description">I provide machine learning solutions to enhance data-driven decision-making and optimize processes with intelligent models.</p>
+            <!-- Hidden Content -->
+            <div class="service-more-content" style="display: none;">
+              <p>Our machine learning solutions range from supervised learning for predictive analytics to unsupervised learning for anomaly detection, tailored to your specific business needs.</p>
+            </div>
+            <a href="#" class="btn btn-primary btn-shadow read-more-btn">Read More</a>
+          </div>
+        </div>
+        
+        <!-- Service 3: Digital Marketing -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card text-center p-4">
+            <div class="service-icon">
+              <i class="bi bi-bar-chart-line-fill"></i>
+            </div>
+            <h3 class="service-title">Digital Marketing</h3>
+            <p class="service-description">I offer digital marketing solutions to help businesses increase their online presence and reach a wider audience.</p>
+            <!-- Hidden Content -->
+            <div class="service-more-content" style="display: none;">
+              <p>From search engine optimization (SEO) to social media marketing and content strategies, we help you reach your target audience and grow your brand online.</p>
+            </div>
+            <a href="https://chatgpt.com/c/67a6cc78-92cc-8002-bc4c-9fb9ed8e4b79" class="btn btn-primary btn-shadow read-more-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="container py-5" id="projects">
+    <h2 class="text-center mb-5" style="color: #fff; font-size: 2.5rem;">Latest <span style="color: #00D1FF;">Projects</span></h2>
+    <div class="row g-4">
+      <!-- First Row: 3 Projects -->
+      <div class="col-md-4">
+        <div class="card bg-dark border-0">
+          <img src="optic.png" class="card-img-top rounded-3" alt="Project 1">
+          <div class="card-body text-center">
+            <h5 class="card-title text-white">OPTICAL CHARACTER RECOZNITION</h5>
+            <p class="card-text">A machine learning model to convert text in image to a pure text form.</p>
+            <a href="https://github.com/karthikeyen007/optical_character" class="btn btn-primary btn-shadow">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark border-0">
+          <img src="heart.png" class="card-img-top rounded-3" alt="Project 2">
+          <div class="card-body text-center">
+            <h5 class="card-title text-white">Heart Disease Prediction</h5>
+            <p class="card-text">A predictive model to detect heart disease using patient data.</p>
+            <a href="https://github.com/karthikeyen007/heart_disease" class="btn btn-primary btn-shadow">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark border-0">
+          <img src="pneumonia.png" class="card-img-top rounded-3" alt="Project 3">
+          <div class="card-body text-center">
+            <h5 class="card-title text-white">PNEUMONIA DETECTION</h5>
+            <p class="card-text">Enhancing the medical world with AI Detecting pneumonia using Cnn.</p>
+            <a href="https://github.com/karthikeyen007/Pneumonia-detector" class="btn btn-primary btn-shadow">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark border-0">
+          <img src="jarvis.png" class="card-img-top rounded-3" alt="Project 3">
+          <div class="card-body text-center">
+            <h5 class="card-title text-white">MY JARVIS MY ASSISTANT</h5>
+            <p class="card-text">A persoal AI assistant who is my TEC.</p>
+            <a href="https://github.com/karthikeyen007/JARVIS" class="btn btn-primary btn-shadow">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark border-0">
+          <img src="dow.png" class="card-img-top rounded-3" alt="Project 3">
+          <div class="card-body text-center">
+            <h5 class="card-title text-white">DOWSINESS DETECTION</h5>
+            <p class="card-text">VERY IMPRESSIVE DTECTION FOR CAR AUTOMATION.</p>
+            <a href="https://github.com/karthikeyen007/Drowsiness-Detection" class="btn btn-primary btn-shadow">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark border-0">
+          <img src="car2.jpg" class="card-img-top rounded-3" alt="Project 3">
+          <div class="card-body text-center">
+            <h5 class="card-title text-white">LISENCE PLATE DETECTION</h5>
+            <p class="card-text">To catch the car lisence lisence plate detection for road safety and crime issues.</p>
+            <a href="https://github.com/karthikeyen007/CARS-LISENCE-PLATE-DETECTION" class="btn btn-primary btn-shadow">View Project</a>
+          </div>
+        </div>
+      </div>
+      
+  </section>
+
+  <!-- Contact Section -->
+  <section class="container py-5" id="contact">
+    <h2 class="text-center mb-5" style="color: #fff; font-size: 2.5rem;">Contact <span style="color: #00D1FF;">Me!</span></h2>
+    <form action="https://formspree.io/f/mdkagnrw" method="POST">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <label for="fullName" class="form-label text-white">Full Name</label>
+          <input type="text" id="fullName" name="name" class="form-control bg-dark text-white border-0 p-3" placeholder="Enter your full name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label text-white">Email Address</label>
+          <input type="email" id="email" name="email" class="form-control bg-dark text-white border-0 p-3" placeholder="Enter your email address" required>
+        </div>
+        <div class="col-md-6">
+          <label for="phone" class="form-label text-white">Phone Number</label>
+          <input type="text" id="phone" name="phone" class="form-control bg-dark text-white border-0 p-3" placeholder="Enter your phone number">
+        </div>
+        <div class="col-md-6">
+          <label for="subject" class="form-label text-white">Subject</label>
+          <input type="text" id="subject" name="subject" class="form-control bg-dark text-white border-0 p-3" placeholder="Enter subject">
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label text-white">Message</label>
+          <textarea id="message" name="message" rows="5" class="form-control bg-dark text-white border-0 p-3" placeholder="Write your message here..." required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary btn-shadow px-5 py-2">Send Message</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <footer class="py-4 text-center bg-dark text-white">
+    <p>&copy; 2025 Karthikeyan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function downloadStarted() {
+      alert("Your download has started!");
+    }
+  </script>
+</body>
+</html>
